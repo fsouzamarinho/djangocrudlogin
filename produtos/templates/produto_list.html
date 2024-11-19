@@ -20,7 +20,7 @@
                 <td>{{ produto.nome }}</td>
                 <td>R$ {{ produto.preco }}</td>
                 <td>{{ produto.categoria.nome }}</td>
-                <td>
+                <td class="acao">
                     <a href="{% url 'produto_update' produto.pk %}" class="btn btn-sm btn-warning">Editar</a>
                     <a href="{% url 'produto_delete' produto.pk %}" class="btn btn-sm btn-danger">Excluir</a>
                 </td>
